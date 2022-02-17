@@ -1,14 +1,19 @@
 import Routes from './routes'
 import { ThemeProvider } from '@emotion/react';
 import { theme } from './theme';
+import Navbar from './components/Navbar'
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <ThemeProvider theme={theme}>
-        <Routes />
+        <Layout>
+          <Navbar />
+          <Routes />
+        </Layout>
       </ThemeProvider>
-    </div>
+    </>
   );
 }
 
