@@ -3,18 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  // useQuery,
-  // gql
-} from "@apollo/client";
+import { ApolloProvider } from "@apollo/client";
+import { client } from './graphql/client/client';
 
-const client = new ApolloClient({
-  uri: "https://graphql-pokeapi.graphcdn.app",
-  cache: new InMemoryCache(),
-});
 
 ReactDOM.render(
   <ApolloProvider client={client}>

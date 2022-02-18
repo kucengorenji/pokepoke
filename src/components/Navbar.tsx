@@ -7,10 +7,11 @@ const Navbar = () => {
         bottom: 0;
         width: 100%;
         height: 60px;
-        background-color: #F7F7F7;
+        background-color: grey;
         padding: 0;
         margin: 0;
         display: flex;
+        z-index: 1;
     `
 
     const navItem = css`
@@ -20,17 +21,17 @@ const Navbar = () => {
     return (
         <div css={navigationBar}>
             <div css={navItem}>
-                <a href="localhost:3000">
+                <a href="/">
                     <img src="" alt="a" />sddfs
                 </a>
             </div>
             <div css={navItem}>
-                <a href="localhost:3000">
+                <a href="/pokemon/a">
                     <img src="" alt="a" />safs
                 </a>
             </div>
             <div css={navItem}>
-                <a href="localhost:3000">
+                <a href="/pokemon-box">
                     <img src="" alt="a" />sfsf
                 </a>
             </div>

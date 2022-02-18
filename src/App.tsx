@@ -9,8 +9,8 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <Layout>
-          <Navbar />
           <Routes />
+          <Navbar />
         </Layout>
       </ThemeProvider>
     </>
