@@ -1,9 +1,16 @@
-const SelectionCard = () => {
+type selectionCardTypes = {
+    image: string,
+    name: string,
+    element: string,
+}
+
+const SelectionCard = ({image, name, element}: selectionCardTypes) => {
+
     return (
-        <div className="pokemon-card">
-                <img src="https://cdn.statically.io/gh/PokeAPI/sprites/master/sprites/pokemon/5.png" alt="" />
-                <p>charmeleon</p>
-                <p>fire</p>
+        <div>
+                <img src={image} alt="" />
+                <p>{name}</p>
+                <p>{element}</p>
         </div>
     )
 }
