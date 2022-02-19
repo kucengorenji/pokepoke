@@ -17,7 +17,7 @@ export const GET_POKEMONS = gql`
   }
 `;
 
-export const gqlVariables = {
+export const getPokemonVariable = {
   limit: 10,
-  offset: 3,
+  offset: 0,
 };

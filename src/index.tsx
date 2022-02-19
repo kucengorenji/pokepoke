@@ -5,7 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { ApolloProvider } from "@apollo/client";
 import { client } from './graphql/client/client';
-
+import "./styles/reset.css";
+import "./styles/index.css";
 
 ReactDOM.render(
   <ApolloProvider client={client}>
