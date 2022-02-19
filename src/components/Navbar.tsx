@@ -13,9 +13,9 @@ const Navbar = () => {
         bottom: 0;
         z-index: 999;
         padding: 0px;
-        display: flex;
+        margin: 0px;
         left: 0;
-    `;
+        `;
 
     const navList = css`
         display: grid;
@@ -28,19 +28,23 @@ const Navbar = () => {
         align-items: center;
         text-align: center;
         justify-content: center;
-        background-color: red;
+        
         position: relative;
+        
     `
 
     const navItem = css`    
+        background-color: #EE1515;
         align-items: center;
         text-align: center;
         justify-content: center;
         font-size: 3em;
+        cursor: pointer;
+        border: 5px solid black;
         &:hover {
-            cursor: pointer;
+            transform: scale(1.05);
             box-shadow: 1px 5px 10px grey;
-            -webkit-transition:  box-shadow .2s ease-out;
+            -webkit-transition:  box-shadow .1s ease-in;
         }   
     `
 
@@ -48,12 +52,12 @@ const Navbar = () => {
         <nav css={navBar}>
             <ul css={navList}>
                 <li css={navItem}>
-                    <a  href="/">
+                    <a css={css`display: block`} href="/">
                         <MdCatchingPokemon />
                     </a>
                 </li>
                 <li css={navItem}>
-                    <a  href="/pokemon-box">
+                    <a css={css`display: block`} href="/pokemon-box">
                         <RiInboxLine />
                     </a>
                 </li>

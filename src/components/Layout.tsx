@@ -11,7 +11,6 @@ const Layout: React.FC = ({ children, ...props }) => {
         padding: 0;
         margin: 0px auto;
         background-color: #F7F7F7;
-        
     `
 
     return (

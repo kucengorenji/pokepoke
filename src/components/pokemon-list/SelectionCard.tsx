@@ -10,7 +10,7 @@ type selectionCardTypes = {
 const SelectionCard = ({image, name, element}: selectionCardTypes) => {
 
     const card = css`
-        margin: 3px;
+        margin: 7px;
         padding: 3px;
         display: flex;
         flex-direction: column;
@@ -20,7 +20,8 @@ const SelectionCard = ({image, name, element}: selectionCardTypes) => {
         &:hover {
             cursor: pointer;
             box-shadow: 1px 5px 10px grey;
-            -webkit-transition:  box-shadow .2s ease-out;
+            transform: scale(1.05);
+            -webkit-transition:  box-shadow .2s ease-in;
         }   
     `
 
